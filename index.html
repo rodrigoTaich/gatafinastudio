@@ -363,7 +363,7 @@
 				 <div class="service-content">
 					 <h3 class="h05">3D MODELING</h3>         		
 				  </div> 	         	 
- 
+
 				 </div> <!-- end bgrid -->
  
 				 <div class="bgrid service-item animate-this">	
@@ -424,6 +424,7 @@
 			
 		</div> <!-- end services-content -->   			
    </section>
+   
 
    <section id="services">
 
@@ -438,6 +439,8 @@
 			
 	   </div> <!-- end col-full -->
 	</div> <!-- end row -->
+
+	
  
 
 	<div class="row services-content">
@@ -661,27 +664,27 @@
    			<h5>Send Us A Message</h5>
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" method="post">     			
+            <form name="contactForm" id="contactForm" method="post" action="enviar.php">     			
 
                <div class="form-field">
- 					   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+ 					   <input name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
                </div>
 
                <div class="row">
                  	<div class="col-six tab-full">
                  		<div class="form-field">
-                 			<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+                 			<input name="email" type="email" id="contactEmail" placeholder="Email" value="" required="">
                  		</div>		      			   
 		            </div>
 	            	<div class="col-six tab-full">	            
 	            		<div class="form-field">
-	            			<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	            			<input name="subject" type="text" id="contactSubject" placeholder="Subject" value="">
 	                  </div>		     				   
 		            </div>
                </div>
                                          
                <div class="form-field">
-	              	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	              	<textarea name="message" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
 	            </div> 
 
                <div class="form-field">
