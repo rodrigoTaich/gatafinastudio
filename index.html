@@ -889,15 +889,17 @@
 					emailjs.sendForm(serviceID, templateID, this)
 						.then(() => {
 							btn.value = 'Send Message';
+							contactForm.reset ()
 							Toastify({
 
 								text: "Message sent",
 
-								duration: 2500,
+								duration: 3000,
 
 								style: {
                                    background: "linear-gradient(to right, #3966a5, #444444)",
                                 },
+
 							}).showToast();
 						}, (err) => {
 							btn.value = 'Send Message';
